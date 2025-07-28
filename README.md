@@ -28,7 +28,7 @@ This project is a test assignment using **Laravel (backend)** and **Vue 3 (front
 
 ```bash
 git clone https://github.com/ViarlUA/TeskTaskNuxgame.git
-cd test-task
+cd TeskTaskNuxgame
 ```
 
 ### 2. Copy `.env.example` to `.env`
