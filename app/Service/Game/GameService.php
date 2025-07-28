@@ -34,12 +34,15 @@ class GameService
     
     private function calcWinnings(int $score): float
     {
-        return match (true) {
-            $score > 900 => $score * 0.7,
-            $score > 600 => $score * 0.5,
-            $score > 300 => $score * 0.3,
-            default      => $score * 0.1
-        };
+        return round(
+            match (true) {
+                $score > 900 => $score * 0.7,
+                $score > 600 => $score * 0.5,
+                $score > 300 => $score * 0.3,
+                default      => $score * 0.1
+            },
+            2
+        );
     }
     
     public function getHistory(User $user): Collection

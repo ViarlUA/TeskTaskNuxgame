@@ -42,6 +42,7 @@ cp .env.example .env
 ```bash
 docker compose up -d
 ```
+This will automatically start Laravel, PostgreSQL, and the Vue 3 (Vite) frontend.
 
 #### 3.1 Enter the container
 

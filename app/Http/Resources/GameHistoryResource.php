@@ -14,7 +14,7 @@ class GameHistoryResource extends JsonResource
         return [
             'id'         => $this->id,
             'is_win'     => $this->is_win,
-            'winnings'   => $this->winnings,
+            'winnings'   => number_format($this->winnings, 2, '.', ''),
             'created_at' => $this->created_at,
         ];
     }
