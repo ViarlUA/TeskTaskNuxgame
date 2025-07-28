@@ -27,7 +27,7 @@ This project is a test assignment using **Laravel (backend)** and **Vue 3 (front
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/test-task.git
+git clone https://github.com/ViarlUA/TeskTaskNuxgame.git
 cd test-task
 ```
 
