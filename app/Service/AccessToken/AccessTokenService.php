@@ -10,14 +10,6 @@ use Illuminate\Support\Str;
 
 class AccessTokenService
 {
-    
-    public function index(User $user): LengthAwarePaginator
-    {
-        return $user->accessTokens()
-            ->latest()
-            ->paginate();
-    }
-    
     public function generateToken(User $user): AccessToken
     {
         $token = Str::random(64);
